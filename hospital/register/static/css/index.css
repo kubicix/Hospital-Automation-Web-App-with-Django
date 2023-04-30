@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(45deg, rgb(139, 129, 129), rgb(123, 189, 93));
+}
+
+html{
+    font-size: 20px;
+}
+
+.header {
+    background-color: #000;
+    height: 4.4rem;
+}
+
+.header img {
+    padding-top: 1mm;
+    float: left;
+    margin-left: 20mm;
+    width: 4rem;
+    height: 4rem;
+}
+
+.header h2 {
+    padding-bottom: 0;
+    float: left;
+    color: #fff;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    font-size: 1.2rem;
+}
+
+.header h3 {
+    padding-top: 1.50rem;
+    color: #fff;
+    padding-right: 3rem;
+    font-size: 0.95rem;
+    float: right;
+}
+
+.buttongroup{
+    width: 30rem;
+    height: 16rem;
+    background: #000;
+    color: #fff;
+    margin-top: 5rem;
+    margin-left: 21rem;
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 30px;
+    /* Köşelerin yuvarlak olması için*/
+    padding: 1rem 1rem;
+}
+
+.buttongroup input {
+    width: 100%;
+    margin-bottom: 1.8rem;
+}
+
+.buttongroup input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 2.6rem;
+    background: green;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 30px;
+}
+
+
+.buttongroup input[type="submit"]:hover {
+    /*Fare üzerine geldiğinde olacak değişklikler için hover özelliğini kullanıyoruz.*/
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+
+p{
+text-align: center;
+color: #fff;
+font-size: 1.12rem;
+
+}
+
+.giriskutusu {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 30px;
+    /* Köşelerin yuvarlak olması için*/
+    padding: 70px 30px;
+
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.giriskutusu p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.giriskutusu input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.giriskutusu input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.giriskutusu input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: green;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.giriskutusu input[type="submit"]:hover {
+    /*Fare üzerine geldiğinde olacak değişklikler için hover özelliğini kullanıyoruz.*/
+    cursor: pointer;
+    background: green;
+    color: #000;
+}
+
+.giriskutusu a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+
+}
+
+.giriskutusu a:hover {
+    color: green;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background: #f1f2f6;
+    padding: 2px 0;
+    box-shadow: 0px 5px 0px #dfe4ea;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+.sifrekutusu {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 30px;
+    /* Köşelerin yuvarlak olması için*/
+    padding: 70px 30px;
+
+}
+
+.sifrekutusu p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.sifrekutusu input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sifrekutusu input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: green;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.sifrekutusu input[type="submit"]:hover {
+    /*Fare üzerine geldiğinde olacak değişklikler için hover özelliğini kullanıyoruz.*/
+    cursor: pointer;
+    background: green;
+    color: #000;
+}
+
+.sifrekutusu input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.sifrekutusu input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.bilgikutusu {
+    width: 600px;
+    height: 470px;
+    background: #000;
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 30px;
+    /* Köşelerin yuvarlak olması için*/
+    padding: 25px 20px;
+    text-align: center;
+}
+
+  
+  main {
+    padding: 20px;
+  }
+  
+  aside {
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+.duyurukutusu {
+    width: 700px;
+    height: 550px;
+    background: #000;
+    color: #fff;
+    top: 62%;
+    left: 27%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 30px;
+    /* Köşelerin yuvarlak olması için*/
+    padding: 25px 20px;
+    text-align: center;
+    
+}
+
+.girisbilgikutusu {
+    width: 600px;
+    height: 370px;
+    background: #000;
+    color: #fff;
+    top: 51%;
+    left: 74%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 30px;
+    /* Köşelerin yuvarlak olması için*/
+    padding: 25px 20px;
+    text-align: center;
+}
+
+
+.bilgiler input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bilgiler input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 50px;
+    background: green;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+}
+
+
+.bilgiler input[type="submit"]:hover {
+    /*Fare üzerine geldiğinde olacak değişklikler için hover özelliğini kullanıyoruz.*/
+    cursor: pointer;
+    background: #fff;
+    color: #000;
+}
+

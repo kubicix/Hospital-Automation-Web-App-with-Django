@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocaeli Üniversitesi Eğitim ve Araştırma Hastenesi</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://www.freelogovectors.net/wp-content/uploads/2018/03/kocaeli-universitesi-logo.png">
+        <h2>Kocaeli Üniversitesi / Giriş Ekranı</h2>
+        <h3>Randevu ve Bilgi Sistemi</h3>
+    </div>
+
+    <section style="background: #2f3542; color: #fff;">
+        <nav class="stroke">
+            <ul>
+                <li><a href="{% url 'hastaanasayfa' %}">Anasayfa</a></li>
+                <li><a href="hastabilgigoruntuleme.html">Bilgi Görüntüleme</a></li>
+                <li><a href="hastarandevuislemleri.html">Randevu İşlemleri</a></li>
+                <li><a href="hastasifredegistirme.html">Şifre Değiştirme</a></li>
+                <li><a href="{% url 'anasayfa' %}">Çıkış Yap</a></li>
+            </ul>
+        </nav>
+    </section>
+    
+    <div class="duyurukutusu">
+      <h2>Sağlıklı Günler Dileriz</h2><br><br>
+      <img src="/Users/halitcelenk/Desktop/hastaneOtomasyon/doktorlar-kamuya-geri-donuyor-1662516289.jpg.webp" style="width: 600px; height: auto;" >
+      
+  </div>
+
+  <div class="girisbilgikutusu">
+      <h2>Diğer Bilgiler</h2><br>
+      <div class="bilgiler">
+          <form action="">
+              <!-- action özelliği tıklandığında yazılan adres sayfasına gitmesini sağlar -->
+              <input type="submit" name="" value="Yönetmelikler">
+          </form>
+          <br>
+          <form action="">
+            <input type="submit" name="" value="Görüş Bildir">
+          </form>
+          <br>
+          <form action="">
+              <input type="submit" name="" value="Amaç, Vizyon, Misyon">
+          </form>
+
+      </div>
+  </div>
+
+</body>
+
+</html>

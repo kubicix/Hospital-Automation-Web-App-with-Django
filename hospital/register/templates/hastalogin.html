@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocaeli Üniversitesi Staj/İME Takip ve Değerlendirme Sistemi</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+
+
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.freelogovectors.net/wp-content/uploads/2018/03/kocaeli-universitesi-logo.png">
+        <h2>Kocaeli Üniversitesi Eğitim ve Araştırma Hastanesi</h2>
+        <h3>Randevu ve Bilgi Sistemi</h3>
+    </div>
+
+    <div class="giriskutusu">
+    <img src="https://w7.pngwing.com/pngs/505/761/png-transparent-login-computer-icons-avatar-icon-monochrome-black-silhouette.png" class="avatar">
+    <h1>Hasta Girişi</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <p>Sicil Numarası</p>
+        <input type="text" name="tcno" placeholder="Sicil Numarası">
+        <p>Şifre</p>
+        <input type="password" name="password" placeholder="Şifre">
+        <input type="submit" name="" value="Giriş">
+        <a href="sifremiunuttum.html">Şifremi unuttum</a>
+    </form>
+    </div>
+    
+</body>
+</html>

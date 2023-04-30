@@ -1,0 +1,31 @@
+{% load static %}
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kocaeli Üniversitesi Eğitim ve Araştırma Hastanesi</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.freelogovectors.net/wp-content/uploads/2018/03/kocaeli-universitesi-logo.png">
+        <h2>Kocaeli Üniversitesi Eğitim ve Araştırma Hastanesi</h2>
+        <h3>Randevu ve Bilgi Sistemi</h3>
+    </div>
+
+    <div class="buttongroup">
+        <form action="{% url 'hastalogin' %}">  <!-- action özelliği tıklandığında yazılan adres sayfasına gitmesini sağlar -->
+            <input type="submit" name="" value="Hasta Girişi">
+        </form>
+
+        <br>
+        <form action="doktorgiris.html">
+            <input type="submit" name="" value="Doktor Girişi">
+        </form>
+    </div>
+    <div class="footer">
+        
+    </div>
+</body>
+</html>
