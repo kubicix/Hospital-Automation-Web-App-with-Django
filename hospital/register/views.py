@@ -13,20 +13,31 @@ def login_view(request):
             hasta = Hasta.objects.get(tcno=tcno, password=password)
         except Hasta.DoesNotExist:
             error_message = "Sicil Numarası veya Şifre Yanlış!"
-            return render(request, 'hastaanasayfa.html', {'error_message': error_message})
+            messages.error(request, error_message)
+            return render(request, 'hastalogin.html')
 
         # Giriş başarılı ise hasta ana sayfasına yönlendir
-        return render(request,'hastaanasayfa.html')
+        return redirect('hastaanasayfa')
 
     return render(request, 'hastalogin.html')
 
-from django.shortcuts import render
 
-def hastaanasayfa(request):
+def hastaanasayfa(request ):
+   
     return render(request, 'hastaanasayfa.html')
 
+
 def anasayfa(request):
+    
     return render(request, 'anasayfa.html')
+
+def randislem(request):
+ 
+    return render(request, 'randislem.html')
+
+def randal(request):
+  
+    return render(request, 'randal.html')
 
 
 
