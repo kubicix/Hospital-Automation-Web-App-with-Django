@@ -2,6 +2,12 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from .models import Hasta
+from .models import Bolum
+
+def randevu_formu(request):
+    bolumler = Bolum.objects.all()
+    print(bolumler)
+    return render(request, 'randal.html', {'bolumler': bolumler})
 
 def login_view(request):
     if request.method == 'POST':

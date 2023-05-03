@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kocaeli Üniversitesi Eğitim ve Araştırma Hastenesi</title>
-    <link rel="stylesheet" href="index.css">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    
 </head>
 
 <body>
@@ -38,137 +39,25 @@
             <div class="container col-md-13">
                 <div class="card-group">
                     <dl class="container text-center">
-                        <dt class="col-sm-5">İl</dt>
-                        <select name="il" id="il" onchange="ilceGoster()">
-                            <option value="İl">Lütfen İl Seçimi Yapınız!</option>
-                            <option value="adana">Adana</option>
-                            <option value="adiyaman">Adıyaman</option>
-                            <option value="afyonkarahisar">Afyonkarahisar</option>
-                            <option value="agri">Ağrı</option>
-                            <option value="aksaray">Aksaray</option>
-                            <option value="amasya">Amasya</option>
-                            <option value="ankara">Ankara</option>
-                            <option value="antalya">Antalya</option>
-                            <option value="ardahan">Ardahan</option>
-                            <option value="artvin">Artvin</option>
-                            <option value="aydin">Aydın</option>
-                            <option value="balikesir">Balıkesir</option>
-                            <option value="bartin">Bartın</option>
-                            <option value="batman">Batman</option>
-                            <option value="bayburt">Bayburt</option>
-                            <option value="bilecik">Bilecik</option>
-                            <option value="bingol">Bingöl</option>
-                            <option value="bitlis">Bitlis</option>
-                            <option value="bolu">Bolu</option>
-                            <option value="burdur">Burdur</option>
-                            <option value="bursa">Bursa</option>
-                            <option value="canakkale">Çanakkale</option>
-                            <option value="cankiri">Çankırı</option>
-                            <option value="corum">Çorum</option>
-                            <option value="denizli">Denizli</option>
-                            <option value="diyarbakir">Diyarbakır</option>
-                            <option value="duzce">Düzce</option>
-                            <option value="edirne">Edirne</option>
-                            <option value="elazig">Elazığ</option>
-                            <option value="erzincan">Erzincan</option>
-                            <option value="erzurum">Erzurum</option>
-                            <option value="eskisehir">Eskişehir</option>
-                            <option value="gaziantep">Gaziantep</option>
-                            <option value="giresun">Giresun</option>
-                            <option value="gumushane">Gümüşhane</option>
-                            <option value="hakkari">Hakkari</option>
-                            <option value="hatay">Hatay</option>
-                            <option value="igdir">Iğdır</option>
-                            <option value="isparta">Isparta</option>
-                            <option value="istanbul">İstanbul</option>
-                            <option value="izmir">İzmir</option>
-                            <option value="kahramanmaras">Kahramanmaraş</option>
-                            <option value="karabuk">Karabük</option>
-                            <option value="karaman">Karaman</option>
-                            <option value="kars">Kars</option>
-                            <option value="kastamonu">Kastamonu</option>
-                            <option value="kayseri">Kayseri</option>
-                            <option value="kilis">Kilis</option>
-                            <option value="kirikkale">Kırıkkale</option>
-                            <option value="kirklareli">Kırklareli</option>
-                            <option value="kirsehir">Kırşehir</option>
-                            <option value="kocaeli">Kocaeli</option>
-                            <option value="konya">Konya</option>
-                            <option value="kutahya">Kütahya</option>
-                            <option value="malatya">Malatya</option>
-                            <option value="manisa">Manisa</option>
-                            <option value="mardin">Mardin</option>
-                            <option value="mersin">Mersin</option>
-                            <option value="mugla">Muğla</option>
-                            <option value="mus">Muş</option>
-                            <option value="nevsehir">Nevşehir</option>
-                            <option value="nigde">Niğde</option>
-                            <option value="ordu">Ordu</option>
-                            <option value="osmaniye">Osmaniye</option>
-                            <option value="rize">Rize</option>
-                            <option value="sakarya">Sakarya</option>
-                            <option value="samsun">Samsun</option>
-                            <option value="siirt">Siirt</option>
-                            <option value="sinop">Sinop</option>
-                            <option value="sivas">Sivas</option>
-                            <option value="sanliurfa">Şanlıurfa</option>
-                            <option value="sirnak">Şırnak</option>
-                            <option value="tekirdağ">Tekirdağ</option>
-                            <option value="tokat">Tokat</option>
-                            <option value="trabzon">Trabzon</option>
-                            <option value="tunceli">Tunceli</option>
-                            <option value="uşak">Uşak</option>
-                            <option value="van">Van</option>
-                            <option value="yalova">Yalova</option>
-                            <option value="yozgat">Yozgat</option>
-                            <option value="zonguldak">Zonguldak</option>
-                        </select>
-                        <br>
-                        <dt class=" col-sm-5">İlçe</dt>
-                        <select id="ilce" name="ilce">
-                            <option value="">Lütfen İlçe Seçimi Yapın</option>
-                        </select>
+                        
                         <dt class="col-sm-5">Randevu Tarihi</dt>
                         <input type="date" name="" placeholder="Randevu Tarihi">
                         <dt class="col-sm-5">Randevu Saati</dt>
                         <input type="time" name="" placeholder="Randevu Saati">
 
                         <dt class="col-sm-5">Randevu Almak İstediğiniz Bölüm</dt>
-                        <select id="bolum-secimi">
-                            <option value="bolum">Lütfen Randevu Almak İstediğiniz Bölümü Seçiniz!</option>
-                            <option value="Beyin">Beyin ve Sinir Cerrahisi</option>
-                            <option value="ÇocukCerrahisi"> Çocuk Cerrahisi</option>
-                            <option value="Dahiliye">Dahiliye</option>
-                            <option value="Deri ve Zührevi Hastalıkları (Cildiye)">Deri ve Zührevi Hastalıkları
-                                (Cildiye)</option>
-                            <option value="Diş Hekimliği (Genel Diş)">Diş Hekimliği (Genel Diş)</option>
-                            <option value="Genel Cerrahi">Genel Cerrahi</option>
-                            <option value="Göğüs Hastalıkları">Göğüs Hastalıkları</option>
-                            <option value="Göz Hastalıkları">Göz Hastalıkları</option>
-                            <option value="Kadın Hastalıkları ve Doğum">Kadın Hastalıkları ve Doğum</option>
-                            <option value="Kalp ve Damar Cerrahisi">Kalp ve Damar Cerrahisi</option>
-                            <option value="Kulak Burun Boğaz Hastalıkları">Kulak Burun Boğaz Hastalıkları
-                            </option>
-                            <option value="Nefroloji">Nefroloji</option>
-                            <option value="Nöroloji">Nöroloji</option>
-                            <option value="Ortopedi ve Travmatoloji">Ortopedi ve Travmatoloji</option>
-                            <option value="Plastik, Rekonstrüktif ve Estetik Cerrahi">Plastik, Rekonstrüktif ve
-                                Estetik
-                                Cerrahi</option>
-                            <option value="Ruh Sağlığı ve Hastalıkları (Psikiyatri)">Ruh Sağlığı ve Hastalıkları
-                                (Psikiyatri)</option>
-                            <option value="Üroloji">Üroloji</option>
+                        <select id="bolum-secimi" name="bolum">
+                            <option value="">Lütfen Randevu Almak İstediğiniz Bölümü Seçiniz!</option>
+                            {% for bolum in bolumler %}
+                                <option value="{{ bolum.idbolum }}">{{ bolum.bolumad }}</option>
+                            {% endfor %}
                         </select>
+
                         <dt class="col-sm-5">Hekim</dt>
                         <select name="hekim" id="hekim">
                             <option value="DR1">Dr1</option>
                             <option value="DR2">Dr2</option>
                             <option value="DR3">Dr3</option>
-                        </select>
-                        <dt class="col-sm-5">Asistan</dt>
-                        <select name="asistan" id="asistan">
-                            <option value="as1">As1</option>
-                            <option value="as2">As2</option>
                         </select>
                         <br><br>
 
