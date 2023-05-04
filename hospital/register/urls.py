@@ -6,6 +6,6 @@ urlpatterns =[
     path('hasta/hastalogin/',views.login_view,name="hastalogin"),
     path('hasta/anasayfa/',views.hastaanasayfa,name="hastaanasayfa"),
     path('hasta/randevuislem',views.randislem,name="randislem"),
-    path('hasta/randevual',views.randal,name="randal")
+    path('hasta/randevual',views.randevu_formu,name="randal")
     
 ]

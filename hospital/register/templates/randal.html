@@ -37,36 +37,41 @@
         <h2 class="pb-2">Randevu Al</h2>
         <div class="card" style="background-color:green">
             <div class="container col-md-13">
-                <div class="card-group">
-                    <dl class="container text-center">
-                        
-                        <dt class="col-sm-5">Randevu Tarihi</dt>
-                        <input type="date" name="" placeholder="Randevu Tarihi">
-                        <dt class="col-sm-5">Randevu Saati</dt>
-                        <input type="time" name="" placeholder="Randevu Saati">
-
-                        <dt class="col-sm-5">Randevu Almak İstediğiniz Bölüm</dt>
-                        <select id="bolum-secimi" name="bolum">
-                            <option value="">Lütfen Randevu Almak İstediğiniz Bölümü Seçiniz!</option>
-                            {% for bolum in bolumler %}
-                                <option value="{{ bolum.idbolum }}">{{ bolum.bolumad }}</option>
-                            {% endfor %}
-                        </select>
-
-                        <dt class="col-sm-5">Hekim</dt>
-                        <select name="hekim" id="hekim">
-                            <option value="DR1">Dr1</option>
-                            <option value="DR2">Dr2</option>
-                            <option value="DR3">Dr3</option>
-                        </select>
-                        <br><br>
-
-                        <a class="btn btn-success"
-                            onclick="return confirm('BİLGİLENDİRME! Randevunuza gitmemeniz halinde 15 gün randevu alamazsınız!')">Randevu
-                            Al</a>
-                        <a class="btn btn-primary" href="hastarandevubilgileri.html">Kapat</a>
-                    </dl>
-                </div>
+                <form method="POST" action="{% url 'randal' %}">
+                    {% csrf_token %}
+                    <div class="card-group">
+                        <dl class="container text-center">
+                            <dt class="col-sm-5">Randevu Tarihi</dt>
+                            <input type="date" name="tarih" placeholder="Randevu Tarihi">
+                            <dt class="col-sm-5">Randevu Saati</dt>
+                            <input type="time" name="saat" placeholder="Randevu Saati">
+                
+                            <dt class="col-sm-5">Randevu Almak İstediğiniz Bölüm</dt>
+                            <select id="bolum-secimi" name="bolum">
+                                <option value="">Lütfen Randevu Almak İstediğiniz Bölümü Seçiniz!</option>
+                                {% for bolum in bolumler %}
+                                    <option value="{{ bolum.idbolum }}">{{ bolum.bolumad }}</option>
+                                {% endfor %}
+                            </select>
+                
+                            <dt class="col-sm-5">Hekim</dt>
+                            <select name="hekim" id="hekim">
+                                <option value="">Lütfen Doktor Seçiniz!</option>
+                                {% for doktor in doktorlar %}
+                                    <option value="{{ doktor.idDoktor }}">{{ doktor.ad }} {{ doktor.soyad }}</option>
+                                {% endfor %}
+                            </select>
+                
+                            <br><br>
+                
+                            <button type="submit" class="btn btn-success"
+                                onclick="return confirm('BİLGİLENDİRME! Randevunuza gitmemeniz halinde 15 gün randevu alamazsınız!')">Randevu
+                                Al</button>
+                            <a class="btn btn-primary" href="randal.html">Kapat</a>
+                        </dl>
+                    </div>
+                </form>
+                
 
             </div>
         </div>
