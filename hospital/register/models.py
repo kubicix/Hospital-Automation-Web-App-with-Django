@@ -6,6 +6,7 @@ class Hasta(models.Model):
 
 
 class Randevu(models.Model):
+    hastatcno = models.CharField(max_length=11,null=True)
     tarih = models.DateField()
     saat = models.TimeField()
     bolum = models.CharField(max_length=255)

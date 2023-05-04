@@ -36,26 +36,33 @@ def login_view(request):
             return render(request, 'hastalogin.html')
 
         # Giriş başarılı ise hasta ana sayfasına yönlendir
+        request.session['tcno'] = tcno
+        print(request.session.get('tcno')) 
         return redirect('hastaanasayfa')
+    
 
     return render(request, 'hastalogin.html')
 
 
 def hastaanasayfa(request ):
-   
+    tcno = request.session.get('tcno')
+    print(tcno) 
     return render(request, 'hastaanasayfa.html')
 
 
 def anasayfa(request):
-    
+    tcno = request.session.get('tcno')
+    print(tcno) 
     return render(request, 'anasayfa.html')
 
 def randislem(request):
- 
+    tcno = request.session.get('tcno')
+    print(tcno) 
     return render(request, 'randislem.html')
 
 def randal(request):
-  
+    tcno = request.session.get('tcno')
+    print(tcno) 
     return render(request, 'randal.html')
 
 
