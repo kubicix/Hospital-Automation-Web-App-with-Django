@@ -39,8 +39,11 @@
             <div class="container col-md-13">
                 <form method="POST" action="{% url 'randal' %}">
                     {% csrf_token %}
+                    
                     <div class="card-group">
                         <dl class="container text-center">
+                            <dt class="col-sm-5">Hasta TC No</dt>
+                            <input type="text" name="hastatcno" value="{{ form.initial.hastatcno }}" placeholder="Hasta TC No">
                             <dt class="col-sm-5">Randevu Tarihi</dt>
                             <input type="date" name="tarih" placeholder="Randevu Tarihi">
                             <dt class="col-sm-5">Randevu Saati</dt>

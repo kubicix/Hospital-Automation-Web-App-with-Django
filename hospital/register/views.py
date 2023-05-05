@@ -6,18 +6,25 @@ from .models import Bolum
 from .forms import RandevuForm
 
 def randevu_formu(request):
+    tcno = request.session.get('tcno')
     bolumler = Bolum.objects.all()
-    form = RandevuForm(request.POST or None)
-
-    if request.method == 'POST' and form.is_valid():
-        # Verileri modele çevir
-        randevu = form.save(commit=False)
-        # Verileri veritabanına kaydet
-        randevu.save()
-        
-        
-
+    
+    if request.method == 'POST':
+        form = RandevuForm(request.POST, tcno=tcno)
+        form.fields['hastatcno'].initial = tcno
+        if form.is_valid():
+            randevu = form.save(commit=False)
+            randevu.save()
+            print("Form is valid and submitted successfully.")
+    else:
+        form = RandevuForm(tcno=tcno)
     return render(request, 'randal.html', {'form': form, 'bolumler': bolumler})
+
+
+
+
+
+
 
 
 
