@@ -4,6 +4,7 @@ from django.contrib.auth import authenticate, login
 from .models import Hasta,Doktor
 from .models import Bolum
 from .forms import RandevuForm
+from django.contrib.auth.hashers import make_password
 
 def randevu_formu(request):
     tcno = request.session.get('tcno')
@@ -25,6 +26,22 @@ def randevu_formu(request):
 
 
 
+def sifre(request):
+    tcno = request.session.get('tcno')
+    hasta = Hasta.objects.get(tcno=tcno)
+    
+    if request.method == 'POST':
+        yeni_sifre = request.POST.get('yeni_sifre')
+        yeni_sifre_tekrar = request.POST.get('yeni_sifre_tekrar')
+        
+        if yeni_sifre == yeni_sifre_tekrar:
+            hasta.password = yeni_sifre
+            hasta.save()
+            return redirect('anasayfa')
+        else:
+            messages.error(request, 'Şifreler eşleşmiyor.')
+    
+    return render(request, 'sifre.html')
 
 
 

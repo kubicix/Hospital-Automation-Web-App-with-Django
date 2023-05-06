@@ -7,5 +7,7 @@ urlpatterns =[
     path('hasta/anasayfa/',views.hastaanasayfa,name="hastaanasayfa"),
     path('hasta/randevuislem/',views.randislem,name="randislem"),
     path('hasta/randal/', views.randevu_formu, name='randal'),
+    path('hasta/sifre', views.sifre, name='sifreekranı'),
+    
     
 ]
