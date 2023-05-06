@@ -43,7 +43,7 @@
                     <div class="card-group">
                         <dl class="container text-center">
                             <dt class="col-sm-5">Hasta TC No</dt>
-                            <input type="text" name="hastatcno" value="{{ form.initial.hastatcno }}" placeholder="Hasta TC No">
+                            <input type="text" name="hastatcno" value="{{ request.session.tcno }}" placeholder="Hasta TC No" readonly>
                             <dt class="col-sm-5">Randevu Tarihi</dt>
                             <input type="date" name="tarih" placeholder="Randevu Tarihi">
                             <dt class="col-sm-5">Randevu Saati</dt>
@@ -57,13 +57,7 @@
                                 {% endfor %}
                             </select>
                 
-                            <dt class="col-sm-5">Hekim</dt>
-                            <select name="hekim" id="hekim">
-                                <option value="">Lütfen Doktor Seçiniz!</option>
-                                {% for doktor in doktorlar %}
-                                    <option value="{{ doktor.idDoktor }}">{{ doktor.ad }} {{ doktor.soyad }}</option>
-                                {% endfor %}
-                            </select>
+                            
                 
                             <br><br>
                 
