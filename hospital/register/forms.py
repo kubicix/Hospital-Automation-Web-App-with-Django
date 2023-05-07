@@ -13,7 +13,7 @@ class RandevuForm(forms.ModelForm):
 
     class Meta:
         model = Randevu
-        fields = ['hastatcno', 'tarih', 'saat', 'bolum']
+        fields = [ 'tarih', 'saat', 'bolum','hastatcno']
         widgets = {
             'tarih': forms.DateInput(attrs={'type': 'date'}),
             'saat': forms.TimeInput(attrs={'type': 'time'}),

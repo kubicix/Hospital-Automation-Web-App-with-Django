@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'hospital.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hospitalproject',
+        'NAME': 'randevual',
         'USER': 'root',
         'PASSWORD': 'kubilay41',
         'HOST':'localhost',
