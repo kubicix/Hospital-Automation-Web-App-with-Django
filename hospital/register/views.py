@@ -16,7 +16,10 @@ def randevu_formu(request):
         if form.is_valid():
             randevu = form.save(commit=False)
             randevu.save()
+            messages.success(request, 'Randevunuz başarılı şekilde alınmıştır.')
             print("Form is valid and submitted successfully.")
+        else:
+            messages.error(request, 'Form is invalid.')
     else:
         form = RandevuForm(tcno=tcno)
     return render(request, 'randal.html', {'form': form, 'bolumler': bolumler})
