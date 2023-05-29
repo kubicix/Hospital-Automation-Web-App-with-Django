@@ -25,12 +25,13 @@ This is a web application developed using Django framework that serves as a hosp
 
 ## Some Pictures from the Project
 
-![db](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/5bf855db-913d-4cd6-a0f1-ecea92b7e9bc)
-![1](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/db6592fe-d04c-4066-9961-7edc675c0c7b)
-![2](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/e95441ba-5576-49a2-8613-3afcb405bb0d)
-![3](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/f127922a-fdd2-4a90-aa19-a0efd4d56bbc)
-![4](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/d4048fef-2ca7-4b26-9916-bdb22e5cd980)
-![5](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/7966cfe9-fefa-474f-9ead-4e9e1eb0de77)
-![6](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/7f75d2a8-c4d2-4214-9ed3-1774b6d399bc)
-![7](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/7d8388aa-00cd-4d13-8ed1-6f3c000495fe)
-![8](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/0f34c24c-ff22-4cf2-b037-5439706eeb72)
+
+![db](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/ec5e3d25-284a-4077-9622-ee164bb0c99d)
+![1](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/51b738f2-075c-4fa5-a3fe-6187fcdbfd0f)
+![2](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/d9c3fa46-7ada-454f-9a3d-f0fcf1d0fe8a)
+![3](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/f831fdbc-6d1e-4e75-b5bb-6fd13a080383)
+![4](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/5cfb0d77-8c9a-4da8-9cf0-731d64ef2ff8)
+![5](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/9eb18e33-2f67-447a-a038-7e9feba5cf2d)
+![6](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/30518852-aab3-40f4-926e-23475544cc18)
+![7](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/93da5037-cf28-4586-a4f2-637ab3cc3635)
+![8](https://github.com/kubicix/Hospital-Automation-with-Django-Html-Css-and-SQL/assets/96316375/d8459f52-73fe-4eb6-8049-c39d158225eb)
